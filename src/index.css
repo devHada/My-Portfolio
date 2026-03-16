@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+* {
+  cursor: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: #f0ece6;
+  font-family: "Outfit", sans-serif;
+  overflow-x: hidden;
+}
+.font-syne {
+  font-family: "Syne", sans-serif;
+}
+.font-outfit {
+  font-family: "Outfit", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff4d00;
+  border-radius: 10px;
+}
