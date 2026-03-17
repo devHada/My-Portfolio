@@ -11,41 +11,50 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="bg-[#151515] flex flex-col gap-10 min-h-screen w-full px-35 py-20 selection:none"
+      className="bg-[#151515] flex flex-col gap-10 min-h-fit w-full px-5 md:px-16 lg:px-35 py-30 selection:none"
     >
       {/* upper section */}
-      <div className="flex flex-col gap-3">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="flex flex-col gap-3"
+      >
         <h1 className="text-lg font-syne font-black uppercase text-orange-600">
           Portfolio
         </h1>
-        <h1 className="text-7xl font-syne font-black">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-syne font-black">
           Things I've <span className="text-orange-600">built</span>
         </h1>
         <p className="text-xl text-gray-500 font-outfit">
           Real projects — for clients, for teams, and for myself.
         </p>
-      </div>
+      </motion.div>
 
       {/* divider line */}
       <motion.div
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="w-full bg-gray-700 h-px origin-left"
+        className="w-full bg-gray-700 h-1 origin-left"
       />
 
       {/* Swiper */}
+
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
+        breakpoints={{
+          0: { slidesPerView: 1, spaceBetween: 16 },
+          768: { slidesPerView: 2, spaceBetween: 24 },
+          1024: { slidesPerView: 3, spaceBetween: 30 },
+        }}
         freeMode={true}
         pagination={{ clickable: true }}
         navigation={{ clickable: true }}
         modules={[FreeMode, Navigation]}
-        className="w-full pb-10"
+        className="w-full max-w-full pb-10"
       >
         {projects.map((project, index) => (
-          <SwiperSlide key={index} className="h-auto">
+          <SwiperSlide key={index}>
             <motion.div
               initial="rest"
               variants={{
@@ -53,7 +62,7 @@ const Projects = () => {
                 hover: { opacity: 1, y: -5 },
               }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.1, ease: "easeInOut" }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
               whileHover="hover"
               className="bg-[#1c1c1c] p-6 rounded-xl flex flex-col gap-4 min-h-95 h-full hover:z-100 hover:shadow-2xl hover:shadow-black/30"
             >

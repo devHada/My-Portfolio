@@ -6,8 +6,8 @@ import { MoveRight } from "lucide-react";
 const Hero = () => {
   return (
     <section
-      id="#hero"
-      className="relative min-h-screen flex items-center overflow-hidden"
+      id="hero"
+      className="relative min-h-screen  flex items-center overflow-hidden"
     >
       <div className="absolute inset-0 pointer-events-none">
         {/* orange glow — right side */}
@@ -32,9 +32,9 @@ const Hero = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="flex pt-6 md:pt-12 w-full md:w-1/2 flex-col px-6 md:px-13 gap-15 "
+        className="flex    md:pt-24  w-full md:w-1/2 flex-col px-6 md:px-12 gap-16"
       >
-        <div className="border-orange-500 flex rounded-3xl  w-85 border-2">
+        <div className="border-orange-500 whitespace-nowrap  flex rounded-3xl w-fit pr-6 border-2">
           <motion.div
             initial={{ opacity: 0.5, scale: 1 }}
             animate={{ opacity: 1, scale: 0.7 }}
@@ -52,13 +52,13 @@ const Hero = () => {
           </h1>
         </div>
 
-        <div className="flex flex-col w-full -mt-7 gap-9 ">
+        <div className="flex flex-col w-full -mt-7 gap-8 ">
           <div>
-            <h1 className="text-5xl sm:text-6xl md:text-8xl font-extrabold font-syne -mb-4">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl xl:text-9xl font-extrabold font-syne -mb-4">
               React
             </h1>
             <h1
-              className="text-[3rem] sm:text-[4rem] md:text-9xl font-bold font-syne"
+              className="text-[3rem] sm:text-[4rem] md:text-9xl xl:9xl font-bold font-syne"
               style={{
                 WebkitTextStroke: "1px rgba(255,255,255,0.4)",
                 color: "transparent",
@@ -69,16 +69,16 @@ const Hero = () => {
           </div>
           <div className="w-10 h-5 bg-orange-500 mt-5 " />
         </div>
-        <div className="flex flex-col gap-10">
-          <p className="text-xl text-gray-500">
+        <div className="flex flex-col gap-10 ">
+          <p className="text-base md:text-xl xl:text-2xl text-gray-500">
             I build fast, modern web experiences — from client websites to
             AI-powered platforms. Based in Jaipur, India.
           </p>
-          <div className="flex gap-5 z-50 ">
+          <div className="flex flex-wrap gap-4 z-50 ">
             <motion.button
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="bg-orange-600 text-sm px-6 py-4 rounded-lg font-extrabold font-outfit flex gap-2 cursor-pointer hover:shadow-lg hover:shadow-orange-600/50 transition-shadow ease-in-out duration-100 "
+              className="bg-orange-600   text-sm px-6 py-4 rounded-lg font-extrabold font-outfit flex gap-2 cursor-pointer hover:shadow-lg hover:shadow-orange-600/50 transition-shadow ease-in-out duration-100 "
             >
               View My Work
               <MoveRight size={15} strokeWidth={2} className="mt-1" />
@@ -96,8 +96,8 @@ const Hero = () => {
       {/* right image */}
 
       <motion.img
-        initial={{ x: 100 }}
-        animate={{ x: 0 }}
+        initial={{ x: 100, opacity: 0.1 }}
+        animate={{ x: 0, opacity: 0.4 }}
         transition={{
           duration: 1,
           delay: 0.3,
@@ -105,7 +105,7 @@ const Hero = () => {
         }}
         src="/gojo.jpg"
         alt=""
-        className="hidden md:block absolute h-[90%] right-0 bottom-0 opacity-40 mix-blend-screen pointer-events-none"
+        className="hidden sm:hidden lg:block md:hidden absolute h-[90%] right-0 bottom-0  mix-blend-screen pointer-events-none"
       />
     </section>
   );

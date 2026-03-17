@@ -17,11 +17,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  const handleClick = () => {
-    document.querySelector("#contact")?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
+
   return (
     <motion.nav
       initial={{ opacity: 0, y: -50 }}
