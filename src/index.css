@@ -33,3 +33,25 @@ body {
   background: #ff4d00;
   border-radius: 10px;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff4d00 !important;
+  background: #1c1c1c;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: none;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  border-color: #ff4d00;
+  cursor: none;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 30px !important;
+  cursor: none;
+}

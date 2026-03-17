@@ -33,27 +33,39 @@ const Navbar = () => {
     >
       {/* LEft */}
       <div className="flex  items-center ">
-        <motion.h1
+        <motion.a
+          href="#hero"
           initial={{ x: "-50vw", opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="text-3xl font-bold font-syne"
+          className="text-2xl font-extrabold font-syne"
         >
           DEV<span className="text-orange-500">.</span>
-        </motion.h1>
+        </motion.a>
       </div>
       {/* Center */}
       <div className="hidden lg:flex  items-center gap-5">
-        <ul className="flex items-center gap-13 ">
+        <ul className="flex items-center font-outfit gap-13 ">
           <li>
             <motion.a
               animate={{ opacity: 0.4 }}
               whileHover={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
-              href="#home"
+              href="#projects"
               className="cursor-pointer   "
             >
-              Home
+              PROJECTS
+            </motion.a>
+          </li>
+          <li>
+            <motion.a
+              animate={{ opacity: 0.4 }}
+              whileHover={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              href="#skills"
+              className="cursor-pointer   "
+            >
+              SKILLS
             </motion.a>
           </li>
           <li>
@@ -64,18 +76,7 @@ const Navbar = () => {
               href="#about"
               className="cursor-pointer   "
             >
-              About
-            </motion.a>
-          </li>
-          <li>
-            <motion.a
-              animate={{ opacity: 0.4 }}
-              whileHover={{ opacity: 1 }}
-              transition={{ duration: 0.3 }}
-              href="#projects"
-              className="cursor-pointer   "
-            >
-              Projects
+              ABOUT
             </motion.a>
           </li>
           <li>
@@ -86,21 +87,21 @@ const Navbar = () => {
               href="#contact"
               className="cursor-pointer"
             >
-              Contact
+              CONTACT
             </motion.a>
           </li>
         </ul>
       </div>
       {/* Right */}
-      <div>
-        <motion.button
-          onClick={handleClick}
-          whileHover={{ y: -4, scale: 1.05 }}
-          className="bg-orange-500 text-white px-4 py-2 rounded-md cursor-pointer hover:shadow-[-6px_6px_10px_rgba(249,115,22,0.6)] transition-all duration-300 ease-in-out active:scale-75"
-        >
-          HIRE ME
-        </motion.button>
-      </div>
+      <motion.a
+        href="#contact"
+        whileHover={{ y: -4, scale: 1.05 }}
+        whileTap={{ scale: 0.9 }}
+        transition={{ duration: 0.1, ease: "easeOut" }}
+        className="bg-orange-500 font-outfit font-bold text-white px-4 py-2 rounded-md cursor-pointer hover:shadow-[-6px_6px_10px_rgba(249,115,22,0.6)] transition-all duration-300 ease-in-out"
+      >
+        HIRE ME
+      </motion.a>
     </motion.nav>
   );
 };

@@ -23,7 +23,9 @@ const Cursor = () => {
     const handleMouseOver = () => setHovered(true);
     const handleMouseOut = () => setHovered(false);
 
-    const interactives = document.querySelectorAll("a, button");
+    const interactives = document.querySelectorAll(
+      "a, button , .swiper-button-next , .swiper-button-prev",
+    );
     interactives.forEach((el) => {
       el.addEventListener("mouseover", handleMouseOver);
       el.addEventListener("mouseout", handleMouseOut);

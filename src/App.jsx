@@ -17,8 +17,9 @@ function App() {
       <main>
         <Hero />
         <TechMarquee />
-        {/* <About />
         <Projects />
+        {/* <About />
+        
         <TechStack />
         <Certificates />
         <Contact /> */}

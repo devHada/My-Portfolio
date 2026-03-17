@@ -1,0 +1,38 @@
+export const projects = [
+  {
+    title: "Kids World Public School",
+    desc: "Official school website — first professional client project. Built for my parents school in Mukundgarh.",
+    tags: ["React", "Vite", "Tailwind", "Firebase", "Groq API"],
+    live: "https://yourlink.com",
+    github: "https://github.com/yourusername/kids-world",
+    category: "client",
+    icon: "🏫",
+  },
+  {
+    title: "Student Hub",
+    desc: "AI-powered study platform with Todos, Notes, AI Tutor, Focus Timer and Study Groups. Built at Projectathon 2.0.",
+    tags: ["React", "Groq API", "Vercel"],
+    live: "https://student-hub-phi.vercel.app",
+    github: "https://github.com/yourusername/student-hub",
+    category: "team",
+    icon: "🚀",
+  },
+  {
+    title: "Portfolio",
+    desc: "Personal portfolio website built with React and Vite.",
+    tags: ["React", "Vite", "Tailwind"],
+    live: "https://yourlink.com",
+    github: "https://github.com/yourusername/portfolio",
+    category: "personal",
+    icon: "👨‍💻",
+  },
+  {
+    title: "Weather Pin",
+    desc: "Weather app built with React, Vite, Tailwind and Open Weather API.",
+    tags: ["React", "Vite", "Tailwind", "Open Weather API"],
+    live: "https://yourlink.com",
+    github: "https://github.com/yourusername/weather-pin",
+    category: "personal",
+    icon: "🌞",
+  },
+];

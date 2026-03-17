@@ -5,7 +5,10 @@ import { MoveRight } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section
+      id="#hero"
+      className="relative min-h-screen flex items-center overflow-hidden"
+    >
       <div className="absolute inset-0 pointer-events-none">
         {/* orange glow — right side */}
         <div
