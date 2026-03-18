@@ -18,7 +18,7 @@ const TechStack = () => {
         <h1 className="text-lg font-outfit font-black uppercase text-orange-600">
           What I work with
         </h1>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-syne font-black">
+        <h1 className="text-4xl md:text-5xl lg:text-7xl font-syne font-black">
           Tech <span className="text-orange-600">Stack</span>
         </h1>
         <p className="text-xl text-gray-500 font-outfit">

@@ -20,13 +20,9 @@ function App() {
         <Projects />
         <TechStack />
         <About />
-        {/* 
-        
-        
-        
-        <Contact /> */}
+        <Contact />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

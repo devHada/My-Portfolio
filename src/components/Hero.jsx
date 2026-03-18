@@ -75,21 +75,23 @@ const Hero = () => {
             AI-powered platforms. Based in Jaipur, India.
           </p>
           <div className="flex flex-wrap gap-4 z-50 ">
-            <motion.button
+            <motion.a
+              href="#projects"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="bg-orange-600   text-sm px-6 py-4 rounded-lg font-extrabold font-outfit flex gap-2 cursor-pointer hover:shadow-lg hover:shadow-orange-600/50 transition-shadow ease-in-out duration-100 "
             >
               View My Work
               <MoveRight size={15} strokeWidth={2} className="mt-1" />
-            </motion.button>
-            <motion.button
+            </motion.a>
+            <motion.a
+              href="#contact"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="bg-transparent border border-gray-800 hover:border-white  ease-in-out  text-sm px-6 py-4 rounded-lg font-extrabold font-outfit cursor-pointer "
             >
               Get In Touch
-            </motion.button>
+            </motion.a>
           </div>
         </div>
       </motion.div>

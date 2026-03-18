@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-[#0d0d0d] flex flex-wrap md:flex-nowrap gap-20 min-h-screen w-full px-5 md:px-16 lg:px-35 py-30 selection:none"
+      className="bg-[#0d0d0d] flex flex-wrap md:flex-nowrap gap-20 min-h-fit w-full px-5 md:px-16 lg:px-35 py-30 selection:none"
     >
       {/* left-side */}
       <motion.div
@@ -19,13 +19,13 @@ const About = () => {
           About Me
         </h1>
         <div className="flex flex-col gap-2">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-syne font-black whitespace-nowrap">
+          <h1 className="text-4xl md:text-4xl lg:text-5xl font-syne font-black whitespace-nowrap">
             React Dev.
           </h1>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-syne font-black text-orange-600 whitespace-nowrap">
+          <h1 className="text-4xl md:text-4xl lg:text-5xl font-syne font-black text-orange-600 whitespace-nowrap">
             Final Year
           </h1>
-          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-syne font-black">
+          <h1 className="text-4xl md:text-4xl lg:text-5xl font-syne font-black">
             BCA.
           </h1>
         </div>
@@ -40,7 +40,7 @@ const About = () => {
           first client project is live, and I led a 6-member team through some
           hackathons. I don't just learn — I build.
         </p>
-        <p className="text-md font-medium text-gray-300 font-outfit">
+        <p className="text-md font-medium text-gray-400 font-outfit">
           I work with
           <span className="text-white font-extrabold">
             {" "}
