@@ -6,7 +6,7 @@ const TechStack = () => {
   return (
     <section
       id="skills"
-      className="bg-[#0d0d0d] flex flex-col gap-10 min-h-screen w-full px-5 md:px-16 lg:px-35 py-30 selection:none"
+      className="bg-[#0d0d0d] flex flex-col gap-10 min-h-fit w-full px-5 md:px-16 lg:px-35 py-30 selection:none"
     >
       {/* upper section */}
       <motion.div
@@ -15,7 +15,7 @@ const TechStack = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
         className="flex flex-col gap-3"
       >
-        <h1 className="text-lg font-syne font-black uppercase text-orange-600">
+        <h1 className="text-lg font-outfit font-black uppercase text-orange-600">
           What I work with
         </h1>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-syne font-black">
@@ -65,6 +65,7 @@ const TechStack = () => {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
             key={index}
             className="flex flex-col  gap-4  bg-[#1D1D1C] rounded-lg p-5 "
           >

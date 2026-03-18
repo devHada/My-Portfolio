@@ -19,10 +19,11 @@ function App() {
         <TechMarquee />
         <Projects />
         <TechStack />
-        {/* <About />
+        <About />
+        {/* 
         
         
-        <Certificates />
+        
         <Contact /> */}
       </main>
       {/* <Footer /> */}

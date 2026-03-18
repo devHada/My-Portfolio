@@ -20,7 +20,7 @@ const Projects = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
         className="flex flex-col gap-3"
       >
-        <h1 className="text-lg font-syne font-black uppercase text-orange-600">
+        <h1 className="text-lg font-outfit font-black uppercase text-orange-600">
           Portfolio
         </h1>
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-syne font-black">
