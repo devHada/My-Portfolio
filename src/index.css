@@ -55,3 +55,11 @@ body {
   font-size: 30px !important;
   cursor: none;
 }
+
+@media (pointer: coarse) {
+  *,
+  *::before,
+  *::after {
+    cursor: none !important;
+  }
+}
