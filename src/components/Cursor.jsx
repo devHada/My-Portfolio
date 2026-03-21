@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 const Cursor = () => {
   const [hovered, setHovered] = useState(false);
+  const [isTouch, setIsTouch] = useState(false);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const springX = useSpring(x, { stiffness: 300, damping: 28, mass: 0.6 });
@@ -38,6 +39,11 @@ const Cursor = () => {
       });
     };
   }, []);
+  useEffect(() => {
+    setIsTouch(window.matchMedia("(pointer: coarse)").matches);
+  }, []);
+
+  if (isTouch) return null;
 
   return (
     <>
