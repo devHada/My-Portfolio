@@ -23,7 +23,7 @@ const Projects = () => {
         <h1 className="text-lg font-outfit font-black uppercase text-orange-600">
           Portfolio
         </h1>
-        <h1 className="text-4xl md:text-5xl lg:text-7xl whitespace-nowrap font-syne font-black">
+        <h1 className="text-3xl md:text-5xl lg:text-7xl whitespace-nowrap font-syne font-black">
           Things I've <span className="text-orange-600">built</span>
         </h1>
         <p className="text-xl text-gray-500 font-outfit">

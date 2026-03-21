@@ -146,7 +146,7 @@ const Contact = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 50 }}
-          className="fixed bottom-8 right-8 bg-orange-600 text-white font-outfit font-bold px-6 py-4 rounded-lg shadow-lg shadow-orange-600/40 z-50"
+          className="fixed bottom-8 right-12 bg-orange-600 text-white font-outfit font-bold px-6 py-4 rounded-lg shadow-lg shadow-orange-600/40 z-50"
         >
           ✅ Message sent successfully!
         </motion.div>
