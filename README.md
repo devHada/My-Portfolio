@@ -24,6 +24,7 @@
 - **Projects** — Client, team & personal projects via Swiper
 - **Tech Stack** — Grouped skill cards by category
 - **About** — Bio, stats grid, resume download
+- **Certificates** - Courses and certifications I've completed.
 - **Contact** — Social links + working EmailJS form
 - **Footer** — Minimal with Google Maps link
 

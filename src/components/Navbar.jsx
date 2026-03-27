@@ -80,6 +80,17 @@ const Navbar = () => {
               animate={{ opacity: 0.4 }}
               whileHover={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
+              href="#certificates"
+              className="cursor-pointer"
+            >
+              CERTS
+            </motion.a>
+          </li>
+          <li>
+            <motion.a
+              animate={{ opacity: 0.4 }}
+              whileHover={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
               href="#contact"
               className="cursor-pointer"
             >

@@ -40,7 +40,6 @@ const Projects = () => {
       />
 
       {/* Swiper */}
-
       <Swiper
         breakpoints={{
           0: { slidesPerView: 1, spaceBetween: 16 },
@@ -55,78 +54,109 @@ const Projects = () => {
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-            <motion.div
-              initial="rest"
-              variants={{
-                rest: { opacity: 0, y: 50 },
-                hover: { opacity: 1, y: -5 },
-              }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
-              whileHover="hover"
-              className="bg-[#1c1c1c] p-6 rounded-xl flex flex-col gap-4 min-h-95 h-full hover:z-100 hover:shadow-2xl hover:shadow-black/30"
-            >
-              {/* hover line */}
-              <motion.div
-                variants={{ rest: { scaleX: 0 }, hover: { scaleX: 1 } }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="w-full h-px bg-orange-500 origin-left"
-              />
-
-              {/* top row — icon + category badge */}
-              <div className="flex justify-between items-center">
-                <span className="text-3xl">{project.icon}</span>
-                <span
-                  className={`text-xs font-bold font-outfit px-3 py-1 rounded-full ${
-                    project.category === "client"
-                      ? "bg-yellow-500 text-black"
-                      : project.category === "team"
-                        ? "bg-green-500 text-black"
-                        : "bg-red-500 text-white"
-                  }`}
+            <div className="relative group min-h-95 h-full rounded-xl">
+              <div
+                className={`${
+                  project.inDevelopment ? "blur-sm group-hover:blur-none" : ""
+                } transition-all duration-300 h-full`}
+              >
+                <motion.div
+                  initial="rest"
+                  variants={{
+                    rest: { opacity: 0, y: 50 },
+                    hover: { opacity: 1, y: -5 },
+                  }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
+                  whileHover="hover"
+                  className="bg-[#1c1c1c] p-6 rounded-xl flex flex-col gap-4 min-h-95 h-full hover:shadow-2xl hover:shadow-black/30"
                 >
-                  {project.category.toUpperCase()}
-                </span>
+                  {/* hover line */}
+                  <motion.div
+                    variants={{ rest: { scaleX: 0 }, hover: { scaleX: 1 } }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="w-full h-px bg-orange-500 origin-left"
+                  />
+
+                  <div className="flex justify-between items-center">
+                    <span className="text-3xl">{project.icon}</span>
+                    <span
+                      className={`text-xs font-bold font-outfit px-3 py-1 rounded-full ${
+                        project.category === "client"
+                          ? "bg-yellow-500 text-black"
+                          : project.category === "team"
+                            ? "bg-green-500 text-black"
+                            : "bg-red-500 text-white"
+                      }`}
+                    >
+                      {project.category.toUpperCase()}
+                    </span>
+                  </div>
+
+                  {/* title */}
+                  <h2 className="text-xl font-bold font-syne">
+                    {project.title}
+                  </h2>
+
+                  {/* description */}
+                  <p className="text-sm text-gray-500 font-outfit flex-1">
+                    {project.desc}
+                  </p>
+
+                  {/* tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className="text-xs border border-white/10 px-2 py-1 rounded-md font-outfit text-gray-400"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* links */}
+                  {!project.inDevelopment ? (
+                    <div className="flex gap-4 text-sm font-outfit text-gray-400 pt-2 border-t border-white/10">
+                      {project.live && (
+                        <a
+                          href={project.live}
+                          target="_blank"
+                          className="hover:text-orange-500 transition-colors"
+                        >
+                          ↗ Live
+                        </a>
+                      )}
+                      {project.github && (
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          className="hover:text-orange-500 transition-colors"
+                        >
+                          ↗ GitHub
+                        </a>
+                      )}
+                    </div>
+                  ) : (
+                    <div className="flex gap-4 text-sm font-outfit text-gray-400 pt-2 border-t border-white/10">
+                      <span>In Development...</span>
+                    </div>
+                  )}
+                </motion.div>
               </div>
 
-              {/* title */}
-              <h2 className="text-xl font-bold font-syne">{project.title}</h2>
-
-              {/* description */}
-              <p className="text-sm text-gray-500 font-outfit flex-1">
-                {project.desc}
-              </p>
-
-              {/* tags */}
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag, i) => (
-                  <span
-                    key={i}
-                    className="text-xs border border-white/10 px-2 py-1 rounded-md font-outfit text-gray-400"
-                  >
-                    {tag}
+              {project.inDevelopment && (
+                <div className="absolute inset-0 z-50 flex flex-col items-center justify-center gap-2 group-hover:opacity-0 transition-opacity duration-300 pointer-events-none rounded-xl">
+                  <span className="text-3xl">🚧</span>
+                  <span className="text-orange-500 text-lg font-bold font-outfit">
+                    In Development
                   </span>
-                ))}
-              </div>
-
-              {/* links */}
-              <div className="flex gap-4 text-sm font-outfit text-gray-400 pt-2 border-t border-white/10">
-                <a
-                  href={project.live}
-                  target="_blank"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  ↗ Live Site
-                </a>
-                <a
-                  href={project.github}
-                  target="_blank"
-                  className="hover:text-orange-500 transition-colors"
-                >
-                  ⌥ GitHub
-                </a>
-              </div>
-            </motion.div>
+                  <span className="text-gray-400 text-xs font-outfit">
+                    {project.title}
+                  </span>
+                </div>
+              )}
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
