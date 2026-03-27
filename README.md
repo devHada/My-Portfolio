@@ -46,6 +46,7 @@ This portfolio was designed and developed entirely by me, featuring live client 
 - **Projects** — Client, team & personal projects with category badges
 - **Tech Stack** — Grouped skill cards by category
 - **About** — Bio, stats grid, resume download
+- **Certificates** - Courses and certifications I've completed.
 - **Contact** — Social links + working EmailJS form
 - **Footer** — Minimal with Google Maps link
 
