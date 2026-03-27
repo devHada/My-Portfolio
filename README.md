@@ -1,30 +1,51 @@
 # DEV. — Personal Portfolio
 
 > Personal portfolio of **Dev Hada** — React Developer based in Jaipur, India.
+> Built from scratch with React, Tailwind CSS v4, and Framer Motion.
 
 🔗 **Live:** [devhada.vercel.app](https://devhada.vercel.app)
 
 ---
 
+## About
+
+I'm a final-year BCA student who builds and ships real products — not just tutorial projects.
+This portfolio was designed and developed entirely by me, featuring live client work, a hackathon team project, and personal builds.
+
+---
+
 ## Tech Stack
 
-| Technology      | Purpose            |
-| --------------- | ------------------ |
-| React + Vite    | Frontend framework |
-| Tailwind CSS v4 | Styling            |
-| Framer Motion   | Animations         |
-| Swiper.js       | Projects carousel  |
-| EmailJS         | Contact form       |
-| Vercel          | Deployment         |
+| Technology      | Purpose                         |
+| --------------- | ------------------------------- |
+| React + Vite    | Frontend framework & build tool |
+| Tailwind CSS v4 | Utility-first styling           |
+| Framer Motion   | Page & scroll animations        |
+| Swiper.js       | Projects carousel               |
+| EmailJS         | Contact form email delivery     |
+| Vercel          | Deployment & hosting            |
+
+---
+
+## Features
+
+- Custom animated cursor with hover state detection
+- Framer Motion scroll-triggered animations on every section
+- Fully working contact form powered by EmailJS
+- Swiper.js project carousel with responsive breakpoints
+- Resume download from About section
+- Mobile responsive across all sections
+- Touch device cursor detection — custom cursor hidden on mobile
+
+---
 
 ## Sections
 
-- **Navbar** — Fixed, scroll effect, Framer Motion entrance
-- **Hero** — Bold headline, Gojo aesthetic, CTA buttons
-- **Projects** — Client, team & personal projects via Swiper
+- **Navbar** — Fixed top bar with scroll blur effect and Framer Motion entrance
+- **Hero** — Bold headline, Gojo aesthetic, animated CTA buttons
+- **Projects** — Client, team & personal projects with category badges
 - **Tech Stack** — Grouped skill cards by category
 - **About** — Bio, stats grid, resume download
-- **Certificates** - Courses and certifications I've completed.
 - **Contact** — Social links + working EmailJS form
 - **Footer** — Minimal with Google Maps link
 
