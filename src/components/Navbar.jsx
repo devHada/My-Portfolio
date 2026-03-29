@@ -75,7 +75,7 @@ const Navbar = () => {
               ABOUT
             </motion.a>
           </li>
-          <li>
+          {/* <li>
             <motion.a
               animate={{ opacity: 0.4 }}
               whileHover={{ opacity: 1 }}
@@ -85,7 +85,7 @@ const Navbar = () => {
             >
               CERTS
             </motion.a>
-          </li>
+          </li> */}
           <li>
             <motion.a
               animate={{ opacity: 0.4 }}

@@ -20,7 +20,7 @@ const Layout = () => {
         <Projects />
         <TechStack />
         <About />
-        <Certificates />
+        {/* <Certificates /> */}
         <Contact />
       </main>
       <Footer />
