@@ -1,5 +1,23 @@
 export const projects = [
   {
+    title: "Cozy Chapters",
+    desc: "Full-stack e-commerce bookstore for author Simi Agarwal — with Razorpay payments, Firebase auth, ebook reader with chapter navigation, and a multi-layer admin panel. Currently in production. Demo on request",
+    tags: [
+      "React",
+      "Vite",
+      "Tailwind",
+      "Firebase",
+      "Razorpay",
+      "Shipmozo",
+      "Framer Motion",
+    ],
+    live: null,
+    github: null,
+    category: "client",
+    icon: "📚",
+    inDevelopment: false,
+  },
+  {
     title: "SnapComp",
     desc: "AI-powered React component generator — describe a UI component in plain English and get clean, ready-to-use JSX code instantly. Powered by Groq's LLaMA model.",
     tags: ["React", "Vite", "Tailwind", "Groq API", "Framer Motion"],
@@ -66,16 +84,6 @@ export const projects = [
     github: "https://github.com/devHada/CineVault",
     category: "personal",
     icon: "🎬",
-    inDevelopment: true,
-  },
-  {
-    title: "Car Decor Catalog",
-    desc: "Client project — a product catalog for a local car decor shop. Browse accessories by category with a clean, mobile-first UI.",
-    tags: ["React", "Vite", "Tailwind", "Framer Motion"],
-    live: null,
-    github: null, // private repo
-    category: "client",
-    icon: "🚗",
     inDevelopment: true,
   },
 ];
