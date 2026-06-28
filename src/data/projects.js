@@ -1,7 +1,7 @@
 export const projects = [
   {
     title: "Cozy Chapters",
-    desc: "Full-stack e-commerce bookstore for author Simi Agarwal — with Razorpay payments, Firebase auth, ebook reader with chapter navigation, and a multi-layer admin panel. Currently in production. Demo on request",
+    desc: "Full-stack e-commerce bookstore for author Simi Agarwal — with Razorpay payments, Firebase auth, ebook reader with chapter navigation, and a multi-layer admin panel. Currently in production. Demo on request (for security purposes).",
     tags: [
       "React",
       "Vite",
